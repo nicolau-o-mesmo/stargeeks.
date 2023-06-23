@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Stick&display=swap');
+
+/* Fontes usadas: Stick(logo e detalhes) e Alata(Textos em geral)
+font-family: 'Alata', sans-serif;
+font-family: 'Stick', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alata', sans-serif;
+    background-color: #282828;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "h h h h h h"
+    "m m m s s s";
+}
+
+header{
+    grid-area: h;
+    background: linear-gradient(119.36deg, #8F00FF 0%, #c981ff 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    height: 50px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.logoimg{
+    height: 50px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+main{
+    grid-area: m;
+    background-image: url(imagens/babyyodafofo.webp);
+    background-size: cover ;
+    height: 44vw;
+    width: 100%;
+}
+
+section{
+    grid-area: s;
+    background: linear-gradient(119.36deg, #7500cf 0%, #ad41ff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > form > h1{
+    color: #FAFF00;
+    font-size: 2.5rem;
+}
+
+footer{
+    grid-area: f;
+    background-color: blueviolet;
+}
+
+form{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    border: #161B22 10px;
+    color: #E6EDF3;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+form > label{
+    margin-top: 0.5vw;
+    margin-bottom: 0.25vw;
+}
+
+button{
+    background-color: #FAFF00;
+}
+
+button{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 20px;
+    height: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+form > input, form > label{
+    font-size: 1rem;
+
+}
+
+form > input{
+    border-radius: 20px;
+    height: 3vw;
+    border: 3px solid gray;
+    border-color: gray;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #FAFF00;
+    color: rgb(0, 0, 0);
+}
+
+form > input:focus{
+    background-color: #0D1117;
+    border: 3px solid #00B2FF;
+    outline: none;
+    color: white;
+}
+
+input{
+    padding-left: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+   
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(29, 32, 43);
+
+    
+}
+
+#lcheck{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
